@@ -1,3 +1,5 @@
+let mapleader = ","
+
 set nocompatible               " be iMproved
  filetype off                   " required!
 
@@ -10,24 +12,30 @@ set nocompatible               " be iMproved
 
  " My Bundles here:
  Bundle 'desert-warm-256'
+ Bundle 'nanotech/jellybeans.vim' 
  Bundle 'scrooloose/nerdtree'
  Bundle 'scrooloose/syntastic'
  Bundle 'godlygeek/tabular'
  Bundle 'pangloss/vim-javascript'
+ Bundle 'tpope/vim-markdown'
  Bundle 'ervandew/supertab'
- Bundle 'blin/vim-airline'
+ Bundle 'bling/vim-airline'
  Bundle 'surround.vim'
+ Bundle "MarcWeber/vim-addon-mw-utils"
+ Bundle "tomtom/tlib_vim"
+ Bundle "garbas/vim-snipmate"
+ Bundle "honza/vim-snippets"
  "
  " original repos on github
  Bundle 'tpope/vim-fugitive'
- Bundle 'Lokaltog/vim-easymotion'
- Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
- Bundle 'tpope/vim-rails.git'
+ " Bundle 'Lokaltog/vim-easymotion'
+ " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+ " Bundle 'tpope/vim-rails.git'
  " vim-scripts repos
- Bundle 'L9'
- Bundle 'FuzzyFinder'
+  Bundle 'L9'
+ " Bundle 'FuzzyFinder'
  " non github repos
- Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'git://git.wincent.com/command-t.git'
  " git repos on your local machine (ie. when working on your own plugin)
  " Bundle 'file:///Users/gmarik/path/to/plugin'
  " ...
