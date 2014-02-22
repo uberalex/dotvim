@@ -2,4 +2,5 @@
 *.swp
 
 bundle/*
+!bundle/vundle
 !bundle/vundle/*
