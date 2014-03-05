@@ -4,6 +4,9 @@ syntax on
 set encoding=utf-8
 set ffs=unix,dos,mac
 
+set guifont=Anonymous\ Pro\ for\ Powerline:h11
+
+
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
   exe "normal mz"
@@ -11,21 +14,6 @@ func! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
-
-function! WordCount()
-  let s:old_status = v:statusmsg
-  let position = getpos(".")
-  exe ":silent normal g\"
-  let stat = v:statusmsg
-  let s:word_count = 0
-  if stat != '--No lines in buffer--'
-    let s:word_count = str2nr(split(v:statusmsg)[11])
-    let v:statusmsg = s:old_status
-  end
-  call setpos('.', position)
-  return s:word_count 
-endfunction
-
 
 "powerline fonts
 let g:airline_powerline_fonts=1
@@ -40,8 +28,12 @@ let g:snips_github = "http://www.github.com/oconnoat"
 let g:snips_email = "Alex.OConnor@scss.tcd.ie"
 
 "mappings
+" ,, for nerd tree
 nmap <Leader>, :NERDTreeToggle <CR>
 
+" ,p for tab paging
+nmap <Leader>p :tabp <CR>
+nmap <Leader>d :call DeleteTrailingWS() <CR>
 
 "tab settings
 set tabstop=4
@@ -52,6 +44,10 @@ set smarttab
 
 "appearance
 set number
-
 color jellybeans
 
+"automatically change to current directory
+set autochdir
+
+"Set Spelling
+nmap <Leader>s :setlocal spell spelllang=en_gb <CR>
