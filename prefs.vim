@@ -55,7 +55,7 @@ set autochdir
 nmap <Leader>s :setlocal spell spelllang=en_gb <CR>
 
 "pandoc conversions
-nmap <Leader>cx :!pandoc --smart % -o %:r.docx <CR>
-nmap <Leader>cf :!pandoc --smart % -o %:r.pdf <CR>
-nmap <Leader>ch :!pandoc --smart % -o %:r.html <CR>
+nmap <Leader>cx :!pandoc --smart "%" -o "%:r.docx" <CR>
+nmap <Leader>cf :!pandoc --smart "%" -o "%:r.pdf" <CR>
+nmap <Leader>ch :!pandoc --smart "%" -o "%:r.html" <CR>
 
