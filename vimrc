@@ -3,9 +3,20 @@ let mapleader = ","
 set nocompatible               " be iMproved
  filetype off                   " required!
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
 
+if has("gui_win32")
+	set rtp+=~/_vimfiles/bundle/vundle/
+	let path='~/_vimfiles/bundle'
+	call vundle#rc(path)
+else
+	set rtp+=~/.vim/bundle/vundle/
+	call vundle#rc()
+end
+ 
+set rtp+=~/vimfiles/bundle/vundle/
+let path='~/vimfiles/bundle'
+call vundle#rc(path)
+ 
  " let Vundle manage Vundle
  " required! 
  Bundle 'gmarik/vundle'
