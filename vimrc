@@ -13,10 +13,6 @@ else
 	call vundle#rc()
 end
  
-set rtp+=~/vimfiles/bundle/vundle/
-let path='~/vimfiles/bundle'
-call vundle#rc(path)
- 
  " let Vundle manage Vundle
  " required! 
  Bundle 'gmarik/vundle'
