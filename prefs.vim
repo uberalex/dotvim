@@ -40,7 +40,8 @@ nmap <Leader>, :NERDTreeToggle <CR>
 
 " ,p for tab paging
 nmap <Leader>p :tabp <CR>
-nmap <Leader>d :call DeleteTrailingWS() <CR>
+
+nmap <Leader>ds :call DeleteTrailingWS() <CR>
 
 "tab settings
 set tabstop=4
@@ -62,5 +63,6 @@ nmap <Leader>s :setlocal spell spelllang=en_gb <CR>
 "pandoc conversions
 nmap <Leader>cx :!pandoc --smart "%" -o "%:r.docx" <CR>
 nmap <Leader>cf :!pandoc --smart "%" -o "%:r.pdf" <CR>
-nmap <Leader>ch :!pandoc --smart "%" -o "%:r.html" <CR>
+nmap <Leader>ch :!pandoc -t html5 --section-divs --css="style.css" --smart "%" -o "%:r.html" <CR>
+
 

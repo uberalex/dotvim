@@ -13,10 +13,6 @@ else
 	call vundle#rc()
 end
  
-set rtp+=~/vimfiles/bundle/vundle/
-let path='~/vimfiles/bundle'
-call vundle#rc(path)
- 
  " let Vundle manage Vundle
  " required! 
  Bundle 'gmarik/vundle'
@@ -26,6 +22,9 @@ call vundle#rc(path)
  Bundle 'nanotech/jellybeans.vim' 
  Bundle 'scrooloose/nerdtree'
  Bundle 'scrooloose/syntastic'
+ Bundle 'groenewege/vim-less'
+ Bundle 'hail2u/vim-css3-syntax'
+ Bundle 'skammer/vim-css-color'
  Bundle 'godlygeek/tabular'
  Bundle 'pangloss/vim-javascript'
  Bundle 'tpope/vim-markdown'
