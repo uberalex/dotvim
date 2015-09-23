@@ -21,6 +21,7 @@ endfunc
 
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.md :call DeleteTrailingWS()
+autocmd BufWrite *.markdown :call DeleteTrailingWS()
 
 "powerline fonts
 let g:airline_powerline_fonts=1

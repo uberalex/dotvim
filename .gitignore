@@ -4,5 +4,5 @@
 .netrwhist
 
 bundle/*
-!bundle/vundle
-!bundle/vundle/*
+!bundle/Vundle.vim
+!bundle/Vundle.vim
