@@ -9,7 +9,7 @@ if has("gui_gtk2")
 elseif has("gui_macvim")
     set guifont=Anonymous\ Pro\ for\ Powerline:h11
 elseif has("gui_win32")
-    set guifont=Anonymous\ Pro\ for\ Powerline:h11
+    set guifont=Anonymice_Powerline:h11
 end
 
 " Delete trailing white space on save
