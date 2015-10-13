@@ -12,6 +12,12 @@ elseif has("gui_win32")
     set guifont=Anonymice_Powerline:h11
 end
 
+"Windows-specific Fixes
+if has("gui_win32")
+    set backspace=eol,start,indent
+    set directory=.,$TEMP " default dir for swap files
+end
+
 " Delete trailing white space on save
 func! DeleteTrailingWS()
   exe "normal mz"
@@ -31,9 +37,9 @@ set laststatus=2
 
 
 "snipmate
-let g:snips_author = "Alexander O'Connor <Alex.OConnor@scss.tcd.ie>"
+let g:snips_author = "Alexander O'Connor <dralexoconnor@gmail.com>"
 let g:snips_github = "http://www.github.com/oconnoat"
-let g:snips_email = "Alex.OConnor@scss.tcd.ie"
+let g:snips_email = "dralexoconnor@gmail.com"
 
 "mappings
 " ,, for nerd tree
@@ -47,13 +53,17 @@ nmap <Leader>ds :call DeleteTrailingWS() <CR>
 "tab settings
 set tabstop=4
 set shiftwidth=4
-
 set expandtab
 set smarttab
 
+"wrapping
+set wrap
+set textwidth=80
+set colorcolumn=80
+
 "appearance
 set number
-color jellybeans
+color desert-warm-256
 
 "automatically change to current directory
 set autochdir

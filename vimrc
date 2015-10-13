@@ -19,13 +19,10 @@ end
 
  " My Bundles here:
  Bundle 'desert-warm-256'
- Bundle 'nanotech/jellybeans.vim' 
  Bundle 'scrooloose/nerdtree'
  Bundle 'scrooloose/syntastic'
- Bundle 'groenewege/vim-less'
  Bundle 'hail2u/vim-css3-syntax'
  Bundle 'skammer/vim-css-color'
- Bundle 'godlygeek/tabular'
  Bundle 'pangloss/vim-javascript'
  Bundle 'tpope/vim-markdown'
  Bundle 'ervandew/supertab'
@@ -33,8 +30,6 @@ end
  Bundle 'surround.vim'
  Bundle "MarcWeber/vim-addon-mw-utils"
  Bundle "tomtom/tlib_vim"
- Bundle "garbas/vim-snipmate"
- Bundle "honza/vim-snippets"
  "
  " original repos on github
  Bundle 'tpope/vim-fugitive'
