@@ -37,9 +37,6 @@ let g:airline_powerline_fonts=1
 set laststatus=2
 
 "snipmate
-let g:snips_author = "Alexander O'Connor <dralexoconnor@gmail.com>"
-let g:snips_github = "http://www.github.com/oconnoat"
-let g:snips_email = "dralexoconnor@gmail.com"
 
 "mappings
 " ,, for nerd tree
@@ -59,13 +56,14 @@ set smarttab
 set colorcolumn=80
 
 
-autocmd BufNewFile,BufRead *.py 
-    \ setlocal wrap
-    \ setlocal textwidth=80
+autocmd BufNewFile,BufRead *.py setlocal wrap
+autocmd BufNewFile,BufRead *.py setlocal textwidth=80
+
+autocmd BufNewFile,BufRead *.tsv setlocal listchars=tab:>- 
 
 "appearance
 set number
-color desert-warm-256
+colorscheme desert-warm-256
 
 "automatically change to current directory
 nnoremap <Leader>cd :cd %:p:h<CR>

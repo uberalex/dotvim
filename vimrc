@@ -19,6 +19,7 @@ end
 
  " My Bundles here:
  Bundle 'desert-warm-256'
+ Bundle 'dunckr/vim-monokai-soda'
  Bundle 'scrooloose/nerdtree'
  Bundle 'scrooloose/syntastic'
  Bundle 'hail2u/vim-css3-syntax'
