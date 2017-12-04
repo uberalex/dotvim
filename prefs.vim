@@ -66,12 +66,14 @@ set number
 colorscheme desert-warm-256
 
 "automatically change to current directory
+set autochdir
 nnoremap <Leader>cd :cd %:p:h<CR>
+
 
 "Set Spelling
 nmap <Leader>s :setlocal spell spelllang=en_gb <CR>
 
 "pandoc conversions
-nmap <Leader>cx :!pandoc --smart "%" -o "%:r.docx" <CR>
-nmap <Leader>cf :!pandoc --smart "%" -o "%:r.pdf" <CR>
+nmap <Leader>cx :!pandoc -f markdown-smart "%" -o "%:r.docx" <CR>
+nmap <Leader>cf :!pandoc -f markdown-smart "%" -o "%:r.pdf" <CR>
 nmap <Leader>ch :!pandoc -t html5 --section-divs --css="style.css" --smart "%" -o "%:r.html" <CR>
