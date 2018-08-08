@@ -15,36 +15,28 @@ end
  
  " let Vundle manage Vundle
  " required! 
- Bundle 'VundleVim/Vundle.vim'
+ Plugin 'VundleVim/Vundle.vim'
 
  " My Bundles here:
- Bundle 'desert-warm-256'
- Bundle 'dunckr/vim-monokai-soda'
- Bundle 'scrooloose/nerdtree'
- Bundle 'scrooloose/syntastic'
- Bundle 'hail2u/vim-css3-syntax'
- Bundle 'skammer/vim-css-color'
- Bundle 'pangloss/vim-javascript'
- Bundle 'tpope/vim-markdown'
- Bundle 'ervandew/supertab'
- Bundle 'bling/vim-airline'
- Bundle 'surround.vim'
- Bundle "MarcWeber/vim-addon-mw-utils"
- Bundle "tomtom/tlib_vim"
- "
- " original repos on github
- Bundle 'tpope/vim-fugitive'
- " Bundle 'Lokaltog/vim-easymotion'
- " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
- " Bundle 'tpope/vim-rails.git'
- " vim-scripts repos
-  Bundle 'L9'
- " Bundle 'FuzzyFinder'
- " non github repos
-" Bundle 'git://git.wincent.com/command-t.git'
- " git repos on your local machine (ie. when working on your own plugin)
- " Bundle 'file:///Users/gmarik/path/to/plugin'
- " ...
+ Plugin 'desert-warm-256'
+ Plugin 'dunckr/vim-monokai-soda'
+ Plugin 'scrooloose/nerdtree'
+ Plugin 'scrooloose/syntastic'
+ Plugin 'hail2u/vim-css3-syntax'
+ Plugin 'skammer/vim-css-color'
+ Plugin 'pangloss/vim-javascript'
+ Plugin 'tpope/vim-markdown'
+ Plugin 'ervandew/supertab'
+ Plugin 'bling/vim-airline'
+ Plugin 'tpope/vim-surround' 
+ Plugin 'MarcWeber/vim-addon-mw-utils'
+ Plugin 'tomtom/tlib_vim'
+ Plugin 'tpope/vim-repeat'
+ Plugin 'tpope/vim-fugitive'
+ Plugin 'L9'
+
+  
+  
  call vundle#end()
  filetype plugin indent on     " required!
  "

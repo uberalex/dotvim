@@ -36,8 +36,6 @@ let g:airline_powerline_fonts=1
 "fix airline not showing up
 set laststatus=2
 
-"snipmate
-
 "mappings
 " ,, for nerd tree
 nmap <Leader>, :NERDTreeToggle <CR>
@@ -54,10 +52,6 @@ set smarttab
 
 "wrapping
 set colorcolumn=80
-
-
-autocmd BufNewFile,BufRead *.py setlocal wrap
-autocmd BufNewFile,BufRead *.py setlocal textwidth=80
 
 autocmd BufNewFile,BufRead *.tsv setlocal listchars=tab:>- 
 
