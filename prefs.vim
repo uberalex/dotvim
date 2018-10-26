@@ -25,6 +25,12 @@ func! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 
+augroup templates
+    autocmd! 
+    autocmd BufNewFile  *.py	0r ~/.vim/templates/skeleton.py
+augroup END
+
+
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.md :call DeleteTrailingWS()
 autocmd BufWrite *.markdown :call DeleteTrailingWS()
@@ -54,6 +60,7 @@ set smarttab
 set colorcolumn=80
 
 autocmd BufNewFile,BufRead *.tsv setlocal listchars=tab:>- 
+autocmd BufNewFile,BufRead *.csv setlocal listchars=,:>-
 
 "appearance
 set number
